@@ -36,25 +36,12 @@
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.github.com/search/repositories?q={machine learning}&sort=stars&order=desc",
-					"protocol": "https",
+					"raw": "{{gh_host}}/search/repositories?q={machine learning}&sort=stars&order=desc&",
 					"host": [
-						"api",
-						"github",
-						"com"
+						"{{gh_host}}"
 					],
 					"path": [
 						"search",
@@ -72,6 +59,10 @@
 						{
 							"key": "order",
 							"value": "desc"
+						},
+						{
+							"key": "",
+							"value": null
 						}
 					]
 				}
@@ -108,25 +99,12 @@
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.github.com/repos/tensorflow/tensorflow/commits?since=2024-11-01",
-					"protocol": "https",
+					"raw": "{{gh_host}}/repos/tensorflow/tensorflow/commits?since=2024-11-01",
 					"host": [
-						"api",
-						"github",
-						"com"
+						"{{gh_host}}"
 					],
 					"path": [
 						"repos",
@@ -181,25 +159,12 @@
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.github.com/repos/tensorflow/tensorflow/contents?path=blob/master/requirements_lock_3_10.txt",
-					"protocol": "https",
+					"raw": "{{gh_host}}/repos/tensorflow/tensorflow/contents?path=blob/master/requirements_lock_3_10.txt",
 					"host": [
-						"api",
-						"github",
-						"com"
+						"{{gh_host}}"
 					],
 					"path": [
 						"repos",
@@ -242,12 +207,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.github.com/search/repositories?q=python&page=2&per_page=1",
-					"protocol": "https",
+					"raw": "{{gh_host}}/search/repositories?q=python&page=2&per_page=1",
 					"host": [
-						"api",
-						"github",
-						"com"
+						"{{gh_host}}"
 					],
 					"path": [
 						"search",
@@ -288,25 +250,12 @@
 				}
 			],
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.github.com/rate_limit",
-					"protocol": "https",
+					"raw": "{{gh_host}}/rate_limit",
 					"host": [
-						"api",
-						"github",
-						"com"
+						"{{gh_host}}"
 					],
 					"path": [
 						"rate_limit"
