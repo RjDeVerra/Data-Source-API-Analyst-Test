@@ -1,10 +1,7 @@
-# Data-Source-API-Analyst-Test
-Homework assignment for Data Source API Analyst role.
-
 # Data Source API Analyst Test
 
 ## Description
-This repository is created as part of a testing assignment. The task is to test the GitHub API via Postman.
+The task is to test the GitHub API via Postman.
 
 ## Contents
 - **Postman_Collection/**: Postman collection with requests to test the API.
