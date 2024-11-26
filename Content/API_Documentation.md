@@ -1,14 +1,21 @@
-## API Documentation
+# GitHub API Documentation
 
 ## Search Repositories
-- **URL**: `https://api.github.com/search/repositories`.
+- **Endpoint**: `GET https://api.github.com/search/repositories`
 - **Parameters**:
-  - `q`: search query (mandatory).
-  - `sort`: sort (e.g., `stars`).
-  - `order`: order (`asc` or `desc`).
+  - `q`: Search query (e.g., "machine learning").
+  - `sort`: Sort by stars, forks, or other fields.
+  - `order`: Sort order ("asc" or "desc").
+  - **Example**: `https://api.github.com/search/repositories?q=machine+learning&sort=stars&order=desc`
 
-## Commits
-- **URL**: `https://api.github.com/repos/{owner}/{repo}/commits`.
+## Retrieve Commits
+- **Endpoint**: `GET https://api.github.com/repos/{owner}/{repo}/commits`
 - **Parameters**:
-  - `per_page`: number of entries per page.
-  - `page`: page number.
+  - `since`: Start date for filtering commits (e.g., `2024-11-01`).
+  - **Example**: `https://api.github.com/repos/tensorflow/tensorflow/commits?since=2024-11-01`
+
+## Retrieve Contents
+- **Endpoint**: `GET https://api.github.com/repos/{owner}/{repo}/contents`
+- **Parameters**:
+  - `path`: Path to the file or directory in the repository.
+  - **Example**: `https://api.github.com/repos/tensorflow/tensorflow/contents/requirements_lock_3_10.txt`
