@@ -41,7 +41,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "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",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -113,7 +113,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "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",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -186,7 +186,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "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",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -293,7 +293,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "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",
+							"value": "",
 							"type": "string"
 						}
 					]
